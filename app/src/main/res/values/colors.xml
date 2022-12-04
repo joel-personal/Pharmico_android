@@ -10,4 +10,5 @@
 
     <color name="blue_lg">#1a589a</color>
     <color name="green_lg">#84c65f</color>
+    <color name="bgcolor">#E3F2FD</color>
 </resources>
