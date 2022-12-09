@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/n_home"
+        android:icon="@drawable/homenew"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/n_list"
+        android:icon="@drawable/pixels"
+        android:title="Grid" />
+<!--    <item-->
+<!--        android:id="@+id/n_search"-->
+<!--        android:icon="@drawable/search"-->
+<!--        android:title="Search" />-->
+    <item
+        android:id="@+id/n_order"
+        android:icon="@drawable/order"
+        android:title="order" />
+    <item
+        android:id="@+id/n_chat"
+        android:icon="@drawable/email"
+        android:title="Message" />
+    <item
+        android:id="@+id/n_notification"
+        android:icon="@drawable/notification"
+        android:title="@string/title_notifications" />
+
+</menu>

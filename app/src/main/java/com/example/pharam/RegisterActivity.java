@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class RegisterActivity extends AppCompatActivity {
 
     MaterialButton btn_register2;
+    TextInputEditText tv_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         btn_register2 = findViewById(R.id.btn_register2);
+        tv_image = findViewById(R.id.tv_image);
 
         handleClickEvents();
     }
@@ -27,6 +31,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
+            }
+        });
+        tv_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Toast.makeText(RegisterActivity.this, "hoo", Toast.LENGTH_SHORT).show();
             }
         });
     }
