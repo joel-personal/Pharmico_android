@@ -3,6 +3,7 @@ package com.example.pharam.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.example.pharam.R;
 import com.example.pharam.adapter.HomeAd;
+import com.example.pharam.adapter.HomeGrid;
 
 import org.json.JSONArray;
 
@@ -44,7 +46,15 @@ public class HomeFragment extends Fragment {
         rv_list = view.findViewById(R.id.rv_list);
 
         populateAd();
+        populateMedicine();
         return view;
+    }
+
+    private void populateMedicine() {
+        GridLayoutManager manager = new GridLayoutManager(getContext(), 2);
+        rv_list.setLayoutManager(manager);
+        HomeGrid grid = new HomeGrid(getContext(), R.layout.row_single_homegrid, 6);
+        rv_list.setAdapter(grid);
     }
 
     private void populateAd() {

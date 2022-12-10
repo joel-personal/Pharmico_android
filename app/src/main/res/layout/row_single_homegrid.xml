@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="650dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="200dp">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="12dp"
-        app:cardUseCompatPadding="true">
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="12dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/iv_ads"
+                android:id="@+id/iv_medicine"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/tv_ad"
-                android:layout_margin="16dp"
-                android:src="@drawable/adv1"/>
+                android:layout_above="@+id/tv_medicine"
+                android:layout_margin="8dp"
+                android:src="@drawable/medicine"/>
 
             <TextView
-                android:id="@+id/tv_ad"
+                android:id="@+id/tv_medicine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
                 android:gravity="center"
                 android:layout_alignParentBottom="true"
-                android:text="This is a short description related to the advertisement shown in the above image"/>
+                android:text="Medicine Name"/>
 
         </RelativeLayout>
 
