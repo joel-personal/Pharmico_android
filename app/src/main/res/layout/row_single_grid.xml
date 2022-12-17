@@ -29,6 +29,7 @@
                 android:layout_below="@+id/iv_medicine"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -36,6 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Medicine Name"
+                    android:fontFamily="@font/cabin"
                     android:layout_weight="1"/>
 
                 <com.google.android.material.button.MaterialButton
@@ -43,6 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Buy now"
+                    android:fontFamily="@font/cabin"
                     android:textAllCaps="false"/>
 
             </LinearLayout>

@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_alignParentBottom="true"
+                android:fontFamily="@font/cabin"
                 android:text="Medicine Name"/>
 
         </RelativeLayout>

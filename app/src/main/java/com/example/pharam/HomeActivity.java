@@ -1,5 +1,6 @@
 package com.example.pharam;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -48,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
 
         navView.setOnItemSelectedListener(onItemSelectedListener);
 
-        searchFragment = new SearchFragment();
+        searchFragment = new SearchFragment(); //not using, check search activity
         listFragment = new ListFragment();
         homeFragment = new HomeFragment();
         orderFragment = new OrderFragment();
@@ -123,6 +124,18 @@ public class HomeActivity extends AppCompatActivity {
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.side_menu, popup.getMenu());
         popup.show();
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.m_search:
+                        startActivity(new Intent(HomeActivity.this, SearchActivity.class));
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
     }
 
     private void handleClickEvents() {
