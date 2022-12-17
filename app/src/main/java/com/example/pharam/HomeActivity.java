@@ -34,7 +34,7 @@ import com.google.android.material.navigation.NavigationBarView;
 public class HomeActivity extends AppCompatActivity {
 
     BottomNavigationView navView;
-    ImageView iv_menu;
+    ImageView iv_menu, iv_profile;
 
     Fragment searchFragment, listFragment, homeFragment, orderFragment, chatFragment, notiFragment, active;
     FragmentManager fm;
@@ -46,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
 
         navView = findViewById(R.id.nav_view);
         iv_menu = findViewById(R.id.iv_menu);
+        iv_profile = findViewById(R.id.iv_profile);
 
         navView.setOnItemSelectedListener(onItemSelectedListener);
 
@@ -143,6 +144,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showPopup(view);
+            }
+        });
+        iv_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
             }
         });
     }

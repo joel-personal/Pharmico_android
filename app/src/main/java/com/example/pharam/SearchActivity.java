@@ -1,6 +1,7 @@
 package com.example.pharam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.pharam.adapter.Search;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 
@@ -37,6 +39,14 @@ public class SearchActivity extends AppCompatActivity {
 
         loadSpinnerDataArg();
         loadSpinnerDataType();
+        populateSearch();
+    }
+
+    private void populateSearch() {
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        rv_search.setLayoutManager(manager);
+        Search adapter = new Search(this);
+        rv_search.setAdapter(adapter);
     }
 
     private void loadSpinnerDataType() {

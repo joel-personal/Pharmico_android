@@ -114,6 +114,7 @@
             android:fontFamily="@font/cabin"
             android:hint="Text"
             android:inputType="text"
+            android:imeOptions="actionDone"
             android:minHeight="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/cabin"
-        android:text="Login"
+        android:text="Search"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"

@@ -19,7 +19,7 @@
             android:id="@+id/iv_profile"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@mipmap/app_launcher"
+            android:src="@drawable/man"
             android:layout_marginLeft="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
