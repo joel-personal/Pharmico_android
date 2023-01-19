@@ -6,6 +6,7 @@
     <string name="title_notifications">Notification</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_message">Something went wrong, please try later</string>
 
     <string-array name="arg">
         <item>Select an arg</item>
